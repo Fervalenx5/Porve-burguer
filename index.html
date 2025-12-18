@@ -11,7 +11,10 @@
   <header class="header">
     <img src="logoporveburguer.JPG" alt="Porve Burguer Logo" class="logo">
     <h1 class="titulo">Porve Burguer</h1>
-    <button id="btnCarrito" class="btn-carrito">🛒</button>
+    <button id="btnCarrito" class="carrito-btn">
+      🛒
+      <span id="carritoCount" class="carrito-count">0</span>
+    </button>
   </header>
 
   <main id="menu" class="menu"></main>
@@ -57,16 +60,14 @@
 <!-- Toast (mensaje de agregado) -->
 <div id="toast" class="toast">Hamburguesa agregada 🍔</div>
 
-<!-- Contador en el carrito -->
-<span id="cart-count" class="cart-count">0</span>
+<script src="data.js"></script>
+<script src="cart.js"></script>
+<script src="personalize.js"></script>
+<script src="dom.js"></script>
+<script src="whatsapp.js"></script>
 
-  <!-- Scripts separados para mantener el mismo comportamiento pero con mejor organización -->
-  <script src="data.js"></script>      <!-- Datos de las hamburguesas -->
-  <script src="dom.js"></script>       <!-- Referencias al DOM -->
-  <script src="cart.js"></script>      <!-- Lógica del carrito (agregar, eliminar, actualizar) -->
-  <script src="render.js"></script>    <!-- Renderizado del menú -->
-  <script src="personalize.js"></script><!-- Modal de personalización -->
-  <script src="whatsapp.js"></script>  <!-- Envío por WhatsApp -->
-  <!-- Nota: `script.js` ya no es necesario si prefieres eliminarlo; lo conservamos sin uso para compatibilidad. -->
+<!-- ESTE SIEMPRE ÚLTIMO -->
+<script src="render.js"></script>
+
 </body>
 </html>

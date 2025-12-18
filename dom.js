@@ -1,5 +1,7 @@
 // Selección de elementos del DOM y exposición como globals
-window.menu = document.getElementById('menu');
+// Usar los IDs correctos de la estructura HTML nueva
+window.menu = document.getElementById('listaHamburguesas') || document.getElementById('menu');
+window.listaHamburguesas = window.menu;
 window.panelPersonalizar = document.getElementById('panelPersonalizar');
 window.overlay = document.getElementById('overlay');
 window.cerrarPersonalizar = document.getElementById('cerrarPersonalizar');
